@@ -1,0 +1,201 @@
+.search {
+  width: auto;
+  margin: 50px;
+}
+
+.mainCard {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.cardContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  max-width: 275px;
+  height: 570px;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  padding: 20px 15px;
+
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px var(--card-shadow);
+  border-color: var(--selected-card);
+}
+
+.closeButtonContainer {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeButton {
+  background: none;
+  border: 1px solid var(--close-button-border);
+  border-radius: 20px;
+  font-size: 20px;
+  color: var(--close-button);
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  background: var(--close-button-background-hover);
+  color: var(--close-button-hover);
+}
+
+.productImage {
+  display: block;
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+  object-fit: cover;
+
+}
+
+.carouselContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImgContainer {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+
+.productTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  margin-bottom: -10px;
+  font-size: 18px;
+}
+
+.productTitle:hover {
+  font-size: 18px;
+  overflow: visible;
+  white-space: normal;
+  background-color: var(--background-color);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.productInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.ratingProductContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: auto;
+  margin-bottom: 10%;
+}
+
+.productPrice {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  margin-right: auto;
+  margin-bottom: auto;
+  color: var(--text-color-price);
+  font-weight: 600;
+  min-height: auto;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.oldPrice {
+  position: relative;
+  margin-right: auto;
+  height: auto;
+  color: var(--discount-price);
+  margin-bottom: -20px;
+  margin-top: auto;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.oldPrice::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background-color: var(--discount-price);
+  transform: rotate(-15deg);
+  transform-origin: center;
+}
+
+.sourceContainer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.productSource,
+.productType {
+  grid-column: 1;
+  width: 100%;
+  margin: 0;
+}
+
+.CartIconContainer {
+  grid-column: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.cartButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+

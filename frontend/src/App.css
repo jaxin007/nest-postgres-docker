@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+body {
+  display: flex;
+  background-color: var(--background-color);
+  flex-direction: column;
+  align-content: center;
+  font-family: 'Montserrat', sans-serif;
+  min-width: 390px;
+}
+
+.App {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+:root {
+  --white: #fff;
+  --white2: #ededed;
+  --black: #000000;
+  --gold: #FFD700FF;
+  --dark-grey: rgb(35, 34, 34);
+  --grey: #ccc;
+  --header-grey: #cac3c3;
+  --shadow: #0000007f;
+  --form: #3c3c3c;
+  --white-shadow: #ffffffbd;
+  --confirm-color:  #268e12;
+  --confirm-color-hover: #126007;
+  --cancel-color: #e41d1d;
+  --cancel-color-hover: #c50d0d;
+  --discount-price: #dd131a;
+  --selected-card: #4caf50;
+  --card-shadow: #00000033;
+  --card-borders: #282c34;
+  --button-color: #0078ff;
+  --button-hover: #0352a6;
+
+}
+
+.dark-theme {
+  --background-color: var(--dark-grey);
+  --text-color: var(--white);
+  --text-color-price: var(--white);
+  --modal-window-background-color: var(--black);
+  --header-background-color: var(--black);
+  --card-shadow: var(--white);
+  --card-border: var(--grey);
+  --close-button: var(--white);
+  --close-button-hover: var(--cancel-color);
+  --close-button-background-hover: var(--white);
+  --close-button-border: var(--white);
+  --link-color: var(--grey);
+  --link-color-hover: var(--white);
+  --signin-form: var(--form);
+  --carousel-active: var(--confirm-color);
+  --carousel-color: var(--black);
+  --hover-button: var(--white2);
+  --hover-button-text: var(--black);
+  --cart-color: var(--white);
+  --cart-color-hover: var(--confirm-color);
+  --pagination-button-active: var(--confirm-color) ;
+  --pagination-button-hover: var(--confirm-color-hover);
+  --pagination-color: var(--black);
+  --search-border: var(--form);
+}
+
+.light-theme {
+  --background-color: var(--white2);
+  --text-color: var(--black);
+  --text-color-price: var(--black);
+  --modal-window-background-color: var(--white);
+  --header-background-color: var(--header-grey);
+  --card-shadow: var(--shadow);
+  --card-border: var(--card-borders);
+  --close-button: var(--black);
+  --close-button-hover: var(--cancel-color);
+  --close-button-background-hover: var(--white);
+  --close-button-border: var(--black);
+  --link-color: var(--dark-grey);
+  --link-color-hover: var(--black);
+  --signin-form: var(--grey);
+  --carousel-active: var(--black);
+  --carousel-color: var(--grey);
+  --hover-button: var(--black);
+  --hover-button-text: var(--white);
+  --cart-color: var(--black);
+  --cart-color-hover: var(--confirm-color);
+  --pagination-button-active: var(--button-color);
+  --pagination-button-hover: var(--button-hover);
+  --pagination-color: var(--white);
+  --search-border: var(--grey);
+}
